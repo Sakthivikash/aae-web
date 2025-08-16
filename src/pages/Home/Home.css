@@ -1,0 +1,371 @@
+/* ========== HERO ========== */
+.hero {
+    background: url("../../images/img2.jpg") center/cover no-repeat;
+    color: #f5dc9e;
+    text-align: center;
+    height: 550px;
+    padding: 140px 20px;
+    position: relative;
+}
+
+.hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3.8rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: #fff;
+    margin: 16px auto 24px;
+    max-width: 720px;
+}
+
+/* buttons */
+.buttons .btn,
+.buttons .btn-outline {
+    margin: 10px;
+    padding: 12px 26px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform 160ms, opacity 160ms;
+}
+
+.btn {
+    background-color: #f5dc9e;
+    color: #0f1e2b;
+    border: 2px solid #0f1e2b;
+}
+
+.btn-outline {
+    border: 2px solid #f5dc9e;
+    color: #f5dc9e;
+    background: #0f1e2b;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* ========== ABOUT section (kept your layout mostly) ========== */
+.about {
+    background-color: #0f1e2b;
+    padding: 60px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #f5dc9e;
+}
+
+.about-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 30px;
+    padding: 10px;
+}
+
+.about-text {
+    flex: 1;
+    row-gap: 1rem;
+}
+
+.about-image img {
+    width: 360px;
+    height: 360px;
+    object-fit: contain;
+}
+
+.about p {
+    font-size: 1rem;
+    text-align: justify;
+    color: #dcdcdc;
+    line-height: 1.6;
+}
+
+.mission {
+    margin-top: 12px;
+    font-weight: 600;
+    color: #f5dc9e;
+}
+
+/* stats */
+.about-stats {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 18px;
+    min-width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform .22s;
+}
+
+.stat-box:hover {
+    transform: translateY(-6px);
+}
+
+.stat-box h3 {
+    color: #ffcc00;
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.stat-box p {
+    color: #ddd;
+}
+
+/* ========== WHAT WE DO (slider) ========== */
+#what-we-do {
+    padding: 90px 0;
+    border-bottom: 2px solid #f5dc9e;
+    background-color: #0f1e2b;
+    text-align: center;
+}
+
+#what-we-do h2 {
+    color: #f5dc9e;
+    font-size: 2rem;
+    margin-bottom: 26px;
+}
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-track {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    animation: scroll 30s linear infinite;
+    width: max-content;
+    padding: 20px 0;
+}
+
+.box {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 250px;
+    background: #0d354b;
+    color: #f5dc9e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    transition: transform .22s, box-shadow .22s;
+}
+
+.box:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.45);
+}
+
+/* seamless animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Section base */
+section {
+    padding: 60px 10%;
+}
+
+.section-title {
+    font-size: 2.1rem;
+    margin-bottom: 28px;
+    color: #f5dc9e;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section-title::after,
+#what-we-do h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ff6600;
+    margin: 10px auto;
+}
+
+/* Upcoming Events */
+.event-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event-card {
+    background: #fae3a8;
+    color: #0d354b;
+    padding: 18px;
+    border-radius: 10px;
+    width: 300px;
+    border: 2px solid #f5dc9e;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform .2s;
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+}
+
+.event-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #ff6600;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.event-btn:hover {
+    background: #ff8533;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Past Highlights */
+.highlight-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.highlight-card {
+    background: #fae3a8;
+    color: #0d354b;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transform: translateY(30px);
+}
+
+.highlight-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.fade-in.visible {
+    animation: fadeSlideUp 0.8s forwards;
+}
+
+@keyframes fadeSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Testimonials */
+#testimonials {
+    padding: 2px 60px !important;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    align-items: center;
+}
+
+.testimonial {
+    width: 100%;
+    max-width: 700px;
+    background: #fae3a8;
+    color: #0d354b;
+    padding: 18px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.testimonial.left {
+    align-self: flex-start;
+}
+
+.testimonial.right {
+    align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+
+    .testimonial.left,
+    .testimonial.right {
+        align-self: center;
+    }
+}
+
+/* sponsors */
+.sponsor-logos {
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsor-logos img {
+    max-width: 120px;
+    filter: grayscale(100%);
+    transition: transform .2s, filter .2s;
+}
+
+.sponsor-logos img:hover {
+    transform: scale(1.08);
+    filter: grayscale(0%);
+}
+
+/* CTA & Footer (kept mostly same) */
+.cta {
+    background: #f5dc9e;
+    color: #0f1e2b;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #ff6600;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.cta a:hover {
+    cursor: pointer;
+    background-color: #fa7f2d;
+}

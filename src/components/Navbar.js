@@ -1,0 +1,70 @@
+import React, { useState } from "react";
+import "./Navbar.css";
+import logo from "../images/AAE SEAL 2.png";
+
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  return (
+    <header className="top-banner">
+      <div className="container navbar-content">
+        {/* Left: Logo + Text */}
+        <div className="left-section">
+          <img src={logo} alt="AAE Logo" className="logo" />
+          <div className="text-content">
+            <p>ASSOCIATION OF AERONAUTICAL ENGINEERS</p>
+            <p>DEPARTMENT OF AEROSPACE ENGINEERING</p>
+            <p>MADRAS INSTITUTE OF TECHNOLOGY</p>
+          </div>
+        </div>
+
+        {/* Right: Nav Links (desktop) */}
+        <nav className={`nav-links ${isOpen ? "open" : ""}`}>
+          <ul>
+            <li>
+              <a href="#home" onClick={() => setIsOpen(false)}>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" onClick={() => setIsOpen(false)}>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#upcoming-events" onClick={() => setIsOpen(false)}>
+                Events
+              </a>
+            </li>
+            <li>
+              <a href="#gallery" onClick={() => setIsOpen(false)}>
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a href="teams.html" onClick={() => setIsOpen(false)}>
+                Team
+              </a>
+            </li>
+            <li>
+              <a href="#join" onClick={() => setIsOpen(false)}>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        {/* Hamburger Icon (mobile) */}
+        <button
+          className="menu-icon"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+  );
+}
