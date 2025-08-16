@@ -24,32 +24,27 @@ export default function Navbar() {
         <nav className={`nav-links ${isOpen ? "open" : ""}`}>
           <ul>
             <li>
-              <a href="#home" onClick={() => setIsOpen(false)}>
+              <a href="/" onClick={() => setIsOpen(false)}>
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" onClick={() => setIsOpen(false)}>
+              <a href="/about" onClick={() => setIsOpen(false)}>
                 About
               </a>
             </li>
             <li>
-              <a href="#upcoming-events" onClick={() => setIsOpen(false)}>
+              <a href="/events" onClick={() => setIsOpen(false)}>
                 Events
               </a>
             </li>
             <li>
-              <a href="#gallery" onClick={() => setIsOpen(false)}>
-                Gallery
-              </a>
-            </li>
-            <li>
-              <a href="teams.html" onClick={() => setIsOpen(false)}>
+              <a href="/teams.html" onClick={() => setIsOpen(false)}>
                 Team
               </a>
             </li>
             <li>
-              <a href="#join" onClick={() => setIsOpen(false)}>
+              <a href="/join" onClick={() => setIsOpen(false)}>
                 Contact
               </a>
             </li>
