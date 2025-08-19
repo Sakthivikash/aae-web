@@ -19,7 +19,6 @@ export default function Navbar() {
             <p>MADRAS INSTITUTE OF TECHNOLOGY</p>
           </div>
         </div>
-
         {/* Right: Nav Links (desktop) */}
         <nav className={`nav-links ${isOpen ? "open" : ""}`}>
           <ul>
@@ -29,28 +28,38 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a href="/about" onClick={() => setIsOpen(false)}>
-                About
+              <a href="/teams" onClick={() => setIsOpen(false)}>
+                Teams
               </a>
             </li>
+            <li>
+              <a href="/people" onClick={() => setIsOpen(false)}>
+                People
+              </a>
+            </li>
+            {/* <li>
+              <a href="/projects" onClick={() => setIsOpen(false)}>
+                Projects
+              </a>
+            </li> */}
             <li>
               <a href="/events" onClick={() => setIsOpen(false)}>
                 Events
               </a>
             </li>
+
             <li>
-              <a href="/teams.html" onClick={() => setIsOpen(false)}>
-                Team
+              <a href="/about" onClick={() => setIsOpen(false)}>
+                About
               </a>
             </li>
             <li>
-              <a href="/join" onClick={() => setIsOpen(false)}>
+              <a href="/contact" onClick={() => setIsOpen(false)}>
                 Contact
               </a>
             </li>
           </ul>
         </nav>
-
         {/* Hamburger Icon (mobile) */}
         <button
           className="menu-icon"

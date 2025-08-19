@@ -1,0 +1,126 @@
+.people-intro {
+    padding: 60px 0 20px;
+    text-align: center;
+    color: #f5dc9e;
+}
+
+.people-intro p {
+    max-width: 700px;
+    margin: 10px auto;
+    color: #ddd;
+}
+
+.people-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.people-card {
+    display: flex;
+    align-items: center;
+    background: rgba(4, 82, 104, 0.659);
+    border-radius: 12px;
+    width: 100%;
+    border: 1px solid rgba(43, 251, 244, 0.923);
+    gap: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+.people-card.left .people-image {
+    order: 1;
+}
+
+.people-card.left .people-details {
+    order: 2;
+}
+
+.people-card.right .people-image {
+    order: 2;
+}
+
+.people-card.right .people-details {
+    order: 1;
+}
+
+.people-image {
+    flex: 0 0 30%;
+    border-radius: 50%;
+}
+
+.people-image img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.people-details {
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.people-details h2 {
+    color: #f5dc9e;
+    margin-bottom: 5px;
+}
+
+.people-details h4 {
+    color: #ff8533;
+    margin-bottom: 12px;
+}
+
+.people-details p {
+    color: #ddd;
+    margin-bottom: 14px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.people-details .social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.people-details .social-icons a {
+    color: #f5dc9e;
+    font-size: 18px;
+    transition: transform 0.2s;
+}
+
+.people-details .social-icons a:hover {
+    transform: scale(1.2);
+    color: #ff6600;
+}
+
+/* Faculty Card Special Style */
+.people-card.faculty {
+    background: rgba(255, 140, 0, 0.28);
+    border: 2px solid #ff8533;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .people-card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .people-image,
+    .people-details {
+        order: unset !important;
+        width: 100%;
+    }
+}

@@ -1,8 +1,25 @@
 import React from "react";
 import "./Home.css";
 import highlight from "../../images/highlight.jpg";
+import highlight2 from "../../images/highlight2.jpg";
+import highlight3 from "../../images/highlight3.jpg";
 import aboutImg from "../../images/AAE SEAL 2.png";
-import sponsor from "../../images/sponsor.png";
+import sponsor1 from "../../images/sponser1.png";
+import sponsor2 from "../../images/sponsor2.jpg";
+import sponsor3 from "../../images/sponsor3.jpg";
+import sponsor4 from "../../images/sponsor4.jpg";
+import sponsor5 from "../../images/sponsor5.jpg";
+import sponsor6 from "../../images/sponsor6.jpg";
+import sponsor7 from "../../images/sponsor7.jpg";
+import sponsor8 from "../../images/sponsor8.jpg";
+import sponsor9 from "../../images/sponsor9.jpg";
+import workshop from "../../images/workshop.jpg";
+import seminars from "../../images/seminars.jpg";
+import guestLect from "../../images/g-lect.jpg";
+import techEvent from "../../images/tech-event.jpg";
+import IV from "../../images/IV.jpg";
+import Research from "../../images/Research.jpg";
+import AECompt from "../../images/AE-compt.jpg";
 
 export default function Home() {
   return (
@@ -83,22 +100,108 @@ export default function Home() {
         <h2>What We Do</h2>
         <div className="slider">
           <div className="slider-track">
-            <div className="box">Workshops</div>
-            <div className="box">Seminars</div>
-            <div className="box">Guest Lectures</div>
-            <div className="box">Technical Events</div>
-            <div className="box">Industrial Visits</div>
-            <div className="box">Research Collaborations</div>
-            <div className="box">Aerospace Competitions</div>
+            <div
+              className="box"
+              style={{ backgroundImage: `url(${workshop})` }}
+            >
+              <div className="overlay">
+                <span> Workshops</span>
+              </div>
+            </div>
+            <div
+              className="box"
+              style={{ backgroundImage: `url(${seminars})` }}
+            >
+              <div className="overlay">
+                <span>Seminars</span>
+              </div>
+            </div>
+            <div
+              className="box"
+              style={{ backgroundImage: `url(${guestLect})` }}
+            >
+              <div className="overlay">
+                <span>Guest Lectures</span>
+              </div>
+            </div>
+            <div
+              className="box"
+              style={{ backgroundImage: `url(${techEvent})` }}
+            >
+              <div className="overlay">
+                <span>Technical Events</span>
+              </div>
+            </div>
+            <div className="box" style={{ backgroundImage: `url(${IV})` }}>
+              <div className="overlay">
+                <span>Industrial Visits</span>
+              </div>
+            </div>
+            <div
+              className="box"
+              style={{ backgroundImage: `url(${Research})` }}
+            >
+              <div className="overlay">
+                <span>Research Collaborations</span>
+              </div>
+            </div>
+            <div className="box" style={{ backgroundImage: `url(${AECompt})` }}>
+              <div className="overlay">
+                <span>Aerospace Competitions</span>
+              </div>
+            </div>
 
             {/* Duplicate */}
-            <div className="box">Workshops</div>
-            <div className="box">Seminars</div>
-            <div className="box">Guest Lectures</div>
-            <div className="box">Technical Events</div>
-            <div className="box">Industrial Visits</div>
-            <div className="box">Research Collaborations</div>
-            <div className="box">Aerospace Competitions</div>
+            <div
+              className="box"
+              style={{ backgroundImage: `url(${workshop})` }}
+            >
+              <div className="overlay">
+                <span> Workshops</span>
+              </div>
+            </div>
+            <div
+              className="box"
+              style={{ backgroundImage: `url(${seminars})` }}
+            >
+              <div className="overlay">
+                <span>Seminars</span>
+              </div>
+            </div>
+            <div
+              className="box"
+              style={{ backgroundImage: `url(${guestLect})` }}
+            >
+              <div className="overlay">
+                <span>Guest Lectures</span>
+              </div>
+            </div>
+            <div
+              className="box"
+              style={{ backgroundImage: `url(${techEvent})` }}
+            >
+              <div className="overlay">
+                <span>Technical Events</span>
+              </div>
+            </div>
+            <div className="box" style={{ backgroundImage: `url(${IV})` }}>
+              <div className="overlay">
+                <span>Industrial Visits</span>
+              </div>
+            </div>
+            <div
+              className="box"
+              style={{ backgroundImage: `url(${Research})` }}
+            >
+              <div className="overlay">
+                <span>Research Collaborations</span>
+              </div>
+            </div>
+            <div className="box" style={{ backgroundImage: `url(${AECompt})` }}>
+              <div className="overlay">
+                <span>Aerospace Competitions</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -155,12 +258,12 @@ export default function Home() {
             </p>
           </div>
           <div className="highlight-card fade-in">
-            <img src={highlight} alt="Highlight 2" />
+            <img src={highlight2} alt="Highlight 2" />
             <h3>ISRO Collaboration</h3>
             <p>Joint seminar with ISRO engineers on Mars Orbiter Mission.</p>
           </div>
           <div className="highlight-card fade-in">
-            <img src={highlight} alt="Highlight 3" />
+            <img src={highlight3} alt="Highlight 3" />
             <h3>Drone Race Challenge</h3>
             <p>Students showcased innovative UAV designs and racing skills.</p>
           </div>
@@ -199,10 +302,15 @@ export default function Home() {
       <section id="sponsors">
         <h2 className="section-title">Our Sponsors & Collaborators</h2>
         <div className="sponsor-logos">
-          <img src={sponsor} alt="Sponsor 1" />
-          <img src={sponsor} alt="Sponsor 2" />
-          <img src={sponsor} alt="Sponsor 3" />
-          <img src={sponsor} alt="Sponsor 4" />
+          <img src={sponsor1} alt="Sponsor 1" />
+          <img src={sponsor2} alt="Sponsor 2" />
+          <img src={sponsor3} alt="Sponsor 3" />
+          <img src={sponsor4} alt="Sponsor 4" />
+          <img src={sponsor5} alt="Sponsor 5" />
+          <img src={sponsor6} alt="Sponsor 6" />
+          <img src={sponsor7} alt="Sponsor 7" />
+          <img src={sponsor8} alt="Sponsor 8" />
+          <img src={sponsor9} alt="Sponsor 9" />
         </div>
       </section>
 

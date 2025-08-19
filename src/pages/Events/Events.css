@@ -1,0 +1,23 @@
+.events-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* keeps it centered */
+    text-align: center;
+}
+
+.under-construction {
+    padding: 2rem;
+    border: 2px dashed #999;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+p{
+    font-size: 20px;
+}
+.under-construction .icon {
+    font-size: 3rem;
+    color: #ff9800;
+    margin-bottom: 1rem;
+}
